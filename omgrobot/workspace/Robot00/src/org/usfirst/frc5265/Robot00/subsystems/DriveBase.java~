@@ -11,10 +11,9 @@
 
 package org.usfirst.frc5265.Robot00.subsystems;
 
-import org.usfirst.frc5265.Robot00.OI;
 import org.usfirst.frc5265.Robot00.Robot;
 import org.usfirst.frc5265.Robot00.RobotMap;
-import org.usfirst.frc5265.Robot00.commands.GoArcade;
+import org.usfirst.frc5265.Robot00.commands.*;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
@@ -56,10 +55,6 @@ public class DriveBase extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     	}
-   
-    
-
-  
     
     public void GoArcade(Joystick stick) {
     	robotDrive.arcadeDrive(stick);    		
