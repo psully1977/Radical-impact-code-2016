@@ -72,7 +72,7 @@ public class GateLifter extends Subsystem {
     public void up(){
     	
     	//while (returnPIDInput() < potUpperLimit){
-    		gateLifterVictor.set(0.2);
+    		gateLifterVictor.set(1);
     	//}
     }
     
@@ -84,7 +84,7 @@ public class GateLifter extends Subsystem {
     
     public void down(){
     	//while (returnPIDInput() > potLowerLimit){
-    		gateLifterVictor.set(-0.2);
+    		gateLifterVictor.set(-1);
     	//}
     }
 }

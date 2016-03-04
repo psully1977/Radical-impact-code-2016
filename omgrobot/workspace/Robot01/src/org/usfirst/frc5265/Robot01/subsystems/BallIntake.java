@@ -47,15 +47,17 @@ public class BallIntake extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     
-    public void on(){
+    public boolean on(){
     	brush.set(1);
+    	return true;
     	
     	
     }
     
-    public void stop(){
+    public boolean stop(){
     	
     	brush.set(0);
+    	return false;
     	
     }
     
